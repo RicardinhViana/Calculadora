@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc {
+    width: 400p;
+    padding: .5em;
+    background-color: rgb(194, 194, 194);
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    color:black;
+}
+
+#operations{
+    text-align: right;
+}
+
+#previous-operation,#current-operation{
+    min-width: 1.6em;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#previous-operation{
+    color: #377;
+
+}
+
+#current-operation{
+    font-size: 3em;
+    font-weight: 600;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-container button{
+    border: 1px solid transparent;
+    border-radius: 2.5px;
+    height: 3em;
+    width: 6em;
+    font-size: 1.2em;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s;  
+}
+
+#buttons-container .number{
+    background-color: #eeeded;
+    border-color: #999;
+}
+
+#buttons-container button:hover{
+    background-color: rgba(229, 255, 0, 0.87);
+}
+
+#buttons-container #equal-btn{
+    grid-column: span 2.5;
+    background-color: #377;
+    transition: 0.2s;
+}
+
+#buttons-container #equal-btn:hover{
+    background-color: rgb(58, 182, 182);
+    border-color: #999;
+}
+
