@@ -7,30 +7,37 @@
 }
 
 body{
-    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3em;
+    background-image: url(Img/sketch-5622725_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+    
+
 
 #calc {
-    width: 400p;
-    padding: .5em;
-    background-color: rgb(194, 194, 194);
-    color: black;
+    width: 600p;
+    padding: 5em;
+    background-color: rgba(194, 194, 194, 0.877);
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
+    border-radius: 30px;
 }
 
 #calc h3{
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
-    color:black;
+    color:rgba(0, 0, 0, 0.753);
+    text-align: right;
 }
 
 #operations{
-    text-align: right;
+    text-align: left;
 }
 
 #previous-operation,#current-operation{
@@ -40,7 +47,9 @@ body{
 }
 
 #previous-operation{
-    color: #377;
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+    font-size: 2.5em;
 
 }
 
@@ -52,15 +61,15 @@ body{
 #buttons-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3px;
+    gap: 4px;
 }
 
 #buttons-container button{
     border: 1px solid transparent;
     border-radius: 2.5px;
-    height: 3em;
-    width: 6em;
-    font-size: 1.2em;
+    height: 2em;
+    width: 5em;
+    font-size: 1.4em;
     background-color: white;
     cursor: pointer;
     transition: 0.2s;  
